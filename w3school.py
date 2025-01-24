@@ -304,3 +304,208 @@ set2 = {1, 2, 3}
 set3 = set1 | set2
 print(set3)
 
+#dictionaries
+'''
+Dictionaries are used to store data values in key:value pairs.
+A dictionary is a collection which is ordered*, changeable
+Do not allow duplicates.
+'''
+
+thisdict = {
+    "brand":"Ford",
+    "model":"Mustang",
+    "year":1964
+}
+print(thisdict)
+
+thisdict = {
+    "brand":"Ford",
+    "model":"Mustang",
+    "year":1964
+}
+print(len(thisdict))
+
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+
+#access
+thisdict = {
+    "brand":"Ford",
+    "model":"Mustang",
+    "year":1964
+}
+x=thisdict["model"]
+print(x)
+
+
+thisdict = {
+    "brand":"Ford",
+    "model":"Mustang",
+    "year":1964
+}
+x = thisdict.get("model")
+print(x)
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.keys()
+print(x)
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.keys()
+print(x) #before the change
+car["color"] = "white"
+print(x) #after the change
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.values()
+print(x)
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.items()
+print(x)
+
+
+#change 
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+print(thisdict)
+
+
+#add
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
+
+
+#remove
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+
+#loop
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict:
+  print(thisdict[x])
+
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict.keys():
+  print(x)
+
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict.items():
+  print(x)
+
+
+#copy
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = dict(thisdict)
+print(mydict)
+
+
+#nested
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+print(myfamily)
+
+
+#IF ELSE
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+#WHILE LOOP
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+
+#FOR LOOP
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+
